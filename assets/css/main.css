@@ -711,6 +711,7 @@ section,
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  font-display: swap;
 }
 
 @media (max-width: 991px) {
