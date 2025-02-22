@@ -713,12 +713,14 @@ section,
   line-height: 1.2;
   margin-bottom: 1.5rem;
   font-family: "Questrial",  sans-serif;;
+  font-display: swap;
 }
 
 @media (max-width: 991px) {
   .hero .content h1 {
     font-size: 2.5rem;
     font-family: "Questrial",  sans-serif;
+    font-display: swap;
   }
 }
 
