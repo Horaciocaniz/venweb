@@ -1,705 +1,362 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>VenWeb</title>
-  <meta property="og:title" content="VenWeb - Desarrollo Web Profesional">
-  <meta property="og:description" content="Creamos páginas web impactantes y optimizadas. ¡Haz crecer tu negocio con nosotros!">
-  <meta property="og:image" content="https://venweb.site/assets/img/PreviewWhatsapp.png">
-  <meta property="og:url" content="https://venweb.site">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="VenWeb - Desarrollo Web Profesional">
-  <meta name="twitter:description" content="Creamos páginas web impactantes y optimizadas. ¡Haz crecer tu negocio con nosotros!">
-  <meta name="twitter:image" content="https://venweb.site/img/PreviewWhatsapp.png">
-
-
-  <!-- Favicons -->
-  <link href="assets/img/VenWebIcon.ico" rel="icon">
-  <link href="assets/img/VenWebIcon.ico" rel="apple-touch-icon">
-  <link rel="icon" href="assets/img/VenWebIcon.png" type="image/png"> 
-
-
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
-  
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-
-
-  <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
-<link rel="preload" fetchpriority="high" as="image" href="/assets/img/ImgHero.png" type="image/png">
-
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VenWeb | Agencia Digital</title>
+  <meta name="description" content="Agencia digital retro-futurista especializada en e-commerce, landings y posicionamiento SEO desde Guatemala.">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link href="assets/styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/VenWebIcon%20%281%29-n5OM50TjEM4iIMwMUDIftb1TKSryca.png">
 </head>
+<body class="font-sans antialiased" style="--font-display:'Anton', sans-serif; --font-sans:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, 'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KDWXC41ZT1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KDWXC41ZT1');
-</script>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-         <img src="assets/img/Logo VenWeb SinFondo.png" alt=""> 
-        <h2 class="sitename">VenWeb</h2>
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-md fixed-top py-3 bg-transparent transition-all">
+    <div class="container-xxl px-4 px-md-5 d-flex align-items-center">
+      <a href="#hero" class="d-flex align-items-center gap-2 text-decoration-none" id="logo-link">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/VenWebIcon%20%281%29-n5OM50TjEM4iIMwMUDIftb1TKSryca.png" alt="VenWeb Logo" width="56" height="56" class="object-fit-contain">
+        <span class="brand-text">VENWEB</span>
       </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Inicio</a></li>
-          <li><a href="#about">Acerca de</a></li>
-          <!-- <li><a href="#resume">Resume</a></li> -->
-          <li><a href="#portfolio">Portafolio</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#contact">Contacto</a></li>
+      <button class="navbar-toggler ms-auto d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-2 gap-md-3">
+          <li class="nav-item"><a class="nav-link fw-bold link-primary-1" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold link-primary-1" href="#portafolio">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold link-primary-1" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item">
+            <a class="btn btn-pill btn-accent shadow-brut border-brut" href="#contacto">Contacto</a>
+          </li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <div class="header-social-links">
-        <a href="https://wa.link/c0enx8" class="twitter"><i class="bi bi-whatsapp"></i></a>
-        <a href="https://www.facebook.com/people/Venweb/61573139589721/" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/venweb_/" class="instagram"><i class="bi bi-instagram"></i></a>
-        
       </div>
-
     </div>
-  </header>
+  </nav>
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="10">
-
-        <div class="row align-items-center content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="10">
-            <h1>Desarrollo Web Profesional para Tu Negocio</h1>
-            <p class="lead">Soluciones web personalizadas para todo tipo de negocios. Lleva tu marca al siguiente nivel.</p>
-            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="#portfolio" class="btn btn-primary">Descubre Nuestro Trabajo</a>
-              <a href="#contact" class="btn btn-outline">Solicita tu Web</a>
-            </div>
-            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
-              <div class="stat-item">
-                <span class="stat-number">3+</span>
-                <span class="stat-label">Años de Experiencia</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">50+</span>
-                <span class="stat-label">Proyectos Completados</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">50+</span>
-                <span class="stat-label">Clientes Felices</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="hero-image">
-              <img src="assets/img/ImgHero.png" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
-              <div class="shape-1"></div>
-              <div class="shape-2"></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Sobre Nosotros</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-        <p>VenWeb es tu ventana digital hacia el éxito. Nos especializamos en crear sitios web profesionales y personalizados para emprendedores como tú. Desde landing pages hasta sitios completos, te ayudamos a llevar tu negocio al mundo digital de manera creativa y efectiva. ¡Haz crecer tu marca con nosotros y llega más lejos!</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-          <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
-            <div class="about-image">
-              <img src="assets/img/ImgAbout (1).png" alt="Profile Image" class="img-fluid rounded-4">
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-content">
-              <span class="subtitle">Venweb</span>
-
-              <h2>Transformamos ideas en presencia digital</h2>
-
-              <p class="lead mb-4">En VenWeb, creamos sitios web funcionales, atractivos y optimizados para ayudar a emprendedores y negocios a destacar en el mundo digital.</p>
-
-              <p class="mb-4"> Con un enfoque en diseño, rendimiento y usabilidad, hacemos que tu presencia en línea trabaje por ti.</p>
-
-              
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-
-    
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Nuestros proyectos hablan por sí solos</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-        <p>Hemos trabajado con emprendedores y negocios para crear sitios web funcionales, atractivos y optimizados. Cada proyecto es una muestra de nuestra creatividad y compromiso con el éxito digital de nuestros clientes.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
-            <ul class="portfolio-filters isotope-filters">
-              <li data-filter="*" class="filter-active">Todos nuestros trabajos</li>
-              <li data-filter=".filter-web">Desarrollo Web</li>
-              <li data-filter=".filter-graphics">E-Commerce</li>
-              <li data-filter=".filter-motion">Portafolio</li>
-            </ul>
-          </div>
-
-          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/ProyectoLaAtajada.png" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/ProyectoLaAtajada.png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-LaAtajada.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Desarrollo Web</span>
-                  <h3>La Atajada - Innovación en la preparación de porteros</h3>
-                  <p>Desarrollamos un sitio web dinámico y funcional para La Atajada, destacando su metodología especializada en la formación de arqueros. Optimizamos la experiencia del usuario con un diseño adaptativo, una presentación clara de servicios y un acceso directo a contacto y reservas.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/ProyectoHoracioCaniz.png" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/ProyectoHoracioCaniz.png" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-HoracioCaniz.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Portafolio</span>
-                  <h3>Horacio Caniz - Portafolio Profesional</h3>
-                  <p>Desarrollamos un portafolio digital elegante y funcional para Horacio Caniz, destacando su trayectoria y proyectos. La página refleja su identidad profesional con un diseño minimalista y una navegación clara para mostrar su trabajo de manera efectiva. </p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/ProyectoPsicoAle.png" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/ProyectoPsicoAle.png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-PsicoAle.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Desarrollo Web</span>
-                  <h3>PsicoAle – Psicología para el bienestar emocional</h3>
-                  <p>Creamos una página web moderna y accesible para PsicoAle, facilitando la conexión con personas en busca de apoyo psicológico. El diseño refleja calidez y confianza, con una navegación intuitiva para conocer servicios y agendar citas fácilmente.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/ProyectoAmocitos.png" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/ProyectoAmocitos.png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-Amocitos.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Desarrollo Web</span>
-                  <h3>Amocitos Online</h3>
-                  <p>Creamos una página web moderna para una pareja que cumple 2 años de novios. Resaltar sus momentos especiales y lo que significa la relación. Siendo una web responsive y llamativa para todo publico.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/ProyectoSapori.png" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/ProyectoSapori.png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-Sapori.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">E-Commerce</span>
-                  <h3>Sapori – Tu Sabor, Tu Pedido</h3>
-                  <p>Desarrollamos una tienda en línea completa para Sapori GT, integrando un carrito de compras intuitivo para que los clientes puedan explorar el menú y hacer pedidos de manera rápida y sencilla. Un diseño funcional que impulsa las ventas.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
+  <main class="min-vh-100">
+    <!-- Hero -->
+    <section id="hero" class="position-relative overflow-hidden bg-cream py-5 py-md-6">
      
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Servicios</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-        <p>En Venweb, nos especializamos en desarrollo web personalizado para negocios de todos los tamaños. Creamos páginas web responsivas, tiendas online y soluciones a medida que destacan en el mercado digital.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-          <div class="col-lg-4 mb-5 mb-lg-0">
-            <h2 class="fw-bold mb-4 servies-title">Descubre que servicio se adapta mejor a tu negocio</h2>
-            <p class="mb-4">Cada servicio tiene su costo individual, consulta y averigua cual es el que mejor se adapta a tu negocio!</p>
-            <a href="#contact" class="btn btn-outline-primary">Solicita tu web</a>
-          </div>
-          <div class="col-lg-8">
-            <div class="row g-4">
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-item">
-                  <i class="bi bi-code-slash"></i>
-                  <h3><a href="desarrollo-web.html">Desarrollo Web Personalizado</a></h3>
-                  <p>Creamos sitios web a medida que representan tu marca y conectan con tu audiencia.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-item">
-                  <i class="bi bi-shop"></i>
-                  <h3><a href="e-commerce.html">E-Commerce</a></h3>
-                  <p>Lleva tu negocio al mundo digital con una tienda en línea funcional y atractiva.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-item">
-                  <i class="bi bi-broadcast icon"></i>
-                  <h3><a href="#">Tarjeta de presentación digital</a></h3>
-                  <p>En Desarrollo...</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="service-item">
-                  <i class="bi bi-graph-up-arrow"></i>
-                  <h3><a href="optimizacion-seo.html">Optimización y SEO</a></h3>
-                  <p>Mejoramos la velocidad, el posicionamiento y la usabilidad de tu sitio para atraer más clientes. Si quieres ajustar alguno o cambiarlo por otro, dime y lo adaptamos.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonios</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-        <p>En Venweb, nos enorgullece ayudar a empresas a tener una presencia online impactante. Aquí te compartimos lo que algunos de nuestros clientes piensan sobre nuestro trabajo:</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="testimonials-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "slidesPerView": 1,
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              }
-            }
-          </script>
-
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h2>La Atajada</h2>
-                    <p>
-                      Gracias a Venweb, nuestra página web ahora refleja la calidad de nuestros servicios. El diseño es moderno, y la optimización para móviles ha mejorado nuestra conversión. ¡Altamente recomendados!
-                    </p>
-                    
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/testimonials/PerfilJuanjo.png" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>Juan José Caniz</h3>
-                        <span>Director</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="featured-img-wrapper">
-                      <img src="assets/img/testimonials/PerfilJuanjo.png" class="featured-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Testimonial Item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h2>Sapori</h2>
-                    <p>
-                      El equipo de Venweb entendió perfectamente nuestras necesidades y entregó una tienda online que no solo luce increíble, sino que también es fácil de usar y gestionar. ¡Estamos muy contentos con el resultado!
-                    </p>
-                
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/testimonials/logoSapori.png" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>Janina Argutea</h3>
-                        <span>Repostera</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="featured-img-wrapper">
-                      <img src="assets/img/testimonials/logoSapori.png" class="featured-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Testimonial Item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h2>
-                      Horacio Caniz - Portafolio Profesional
-                    </h2>
-                    <p>
-                      El equipo de Venweb superó mis expectativas al crear un portafolio digital profesional y funcional. Su atención al detalle y su capacidad para entender mis necesidades fueron clave para lograr una página que refleja perfectamente mi trabajo. Ahora, mis clientes tienen una experiencia fluida y visualmente impactante. ¡Totalmente recomendados!
-                    </p>
-                    
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/testimonials/Perfil Lacho.png" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>Horacio Caniz</h3>
-                        <span>Freelancer</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="featured-img-wrapper">
-                      <img src="assets/img/testimonials/Perfil Lacho.png" class="featured-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Testimonial Item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h2>PsicoAle</h2>
-                    <p>
-                      Trabajar con Venweb fue una experiencia increíble. Su equipo entendió nuestra visión y creó un sitio web que no solo es visualmente atractivo, sino que también es intuitivo y fácil de navegar. Gracias a ellos, hemos logrado mejorar la interacción con nuestros usuarios. ¡Recomendados al 100%!
-                    </p>
-                    
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/testimonials/aleGraduada.jpg" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>Ale Bonilla</h3>
-                        <span>Fundadora de PsicoAle</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="featured-img-wrapper">
-                      <img src="assets/img/testimonials/aleGraduada.jpg" class="featured-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Testimonial Item -->
-
-          </div>
-
-          <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Preguntas Frecuentes</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-        <p>Aquí encontrarás respuestas a las dudas más comunes sobre nuestros servicios de desarrollo web. Si tienes alguna pregunta adicional o necesitas más información, no dudes en ponerte en contacto con nosotros. ¡Estamos aquí para ayudarte a llevar tu presencia digital al siguiente nivel!</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
+      <div class="container-xxl position-relative">
         <div class="row justify-content-center">
-
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>¿Qué servicios ofrece Venweb?</h3>
-                <div class="faq-content">
-                  <p>Nos especializamos en crear páginas web adaptativas, tiendas online, soluciones a medida para tu negocio, y optimización SEO para aumentar la visibilidad de tu sitio.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>¿Cuánto tiempo tarda en desarrollarse una página web?</h3>
-                <div class="faq-content">
-                  <p>El tiempo de desarrollo depende de la complejidad del proyecto, pero generalmente tomamos entre 2 a 4 semanas para entregar un sitio web totalmente funcional.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>¿Ofrecen servicios de optimización SEO para mi sitio web?</h3>
-                <div class="faq-content">
-                  <p>Sí, cada página web que creamos incluye una base sólida de optimización SEO. También ofrecemos paquetes adicionales para mejorar la visibilidad de tu sitio.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>¿Qué necesito para comenzar a trabajar en mi proyecto web?</h3>
-                <div class="faq-content">
-                  <p> Solo necesitamos que nos cuentes sobre tu negocio y tus objetivos. A partir de ahí, crearemos un plan personalizado para tu sitio web, y te guiaremos en el proceso de proporcionar los materiales necesarios (como logotipos, textos e imágenes).</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>¿Qué sucede después de que mi sitio web esté terminado?</h3>
-                <div class="faq-content">
-                  <p>Una vez que tu sitio esté listo, lo lanzamos y te ofrecemos un servicio de mantenimiento mensual para asegurar que tu página esté siempre actualizada, segura y funcionando correctamente.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>¿Cómo puedo contactarlos para iniciar un proyecto?</h3>
-                <div class="faq-content">
-                  <p>Puedes contactarnos por whatsapp, correo electrónico o llamándonos directamente. Estaremos encantados de discutir tu proyecto y darte una cotización personalizada.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
+          <div class="col-12">
+            <div class="card-brut bg-white p-4 p-md-5 mb-4 mb-md-5">
+              <h1 class="display-title text-primary-2 text-uppercase mb-3">Agencia de desarrollo web y e-commerce en Guatemala.</h1>
+              <p class="lead text-body-secondary mb-0">Webs que venden, no solo lucen.</p>
             </div>
-
-          </div><!-- End Faq Column-->
-
+          </div>
         </div>
 
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-5">
-          <div class="col-lg-6">
-            <div class="content" data-aos="fade-up" data-aos-delay="200">
-              <div class="section-category mb-3">Contacto</div>
-              <h2 class="display-5 mb-4">¡Estamos aquí para ayudarte!</h2>
-              <p class="lead mb-4">Si tienes alguna pregunta, deseas más información sobre nuestros servicios o estás listo para comenzar tu proyecto web, no dudes en ponerte en contacto con nosotros. En Venweb, nos encantaría trabajar contigo y llevar tu presencia digital al siguiente nivel.</p>
-
-              <a href="https://wa.link/c0enx8">
-              <div class="contact-info mt-5">
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-whatsapp me-3"></i>
-                  <span>Whatsapp</span>
-                </div>
-              </a>
-                
-              
-              <a href="mailto:info.venweb@gamil.com">
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-envelope-at me-3"></i>
-                  <span>info.venweb@gmail.com</span>
-                </div>
-              </a>
-
-              <a href="tel:+50247266960">
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-telephone me-3"></i>
-                  <span>+502 4726-6960</span>
-                </div>
-              </a>
-
-                <div class="info-item d-flex mb-4">
-                  <i class="bi bi-geo-alt me-3"></i>
-                  <span>Ribera Del Rio, San Miguel Petapa</span>
-                </div>
-
-                
+        <div class="row g-3 g-md-4">
+          <div class="col-md-7">
+            <div class="card-brut bg-accent p-3 p-md-4 h-100 d-flex flex-column justify-content-between hero-cta">
+              <div>
+                <h3 class="h2 display-subtitle text-white text-uppercase mb-2">Cotiza tu proyecto</h3>
+                <p class="text-white-90 mb-3">Obtén una propuesta personalizada en menos de 24 horas. Sin compromisos.</p>
+              </div>
+              <a href="#contacto" class="btn btn-light btn-pill border-brut shadow-brut text-accent fw-bold align-self-start">Empezar ahora <span class="ms-1">→</span></a>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card-brut bg-primary-2 p-4 p-md-5 h-100 d-flex flex-column justify-content-center hero-stats">
+              <div class="mb-4">
+                <div class="stat-number text-cream mb-1">+50</div>
+                <div class="text-cream">Proyectos exitosos</div>
+              </div>
+              <div>
+                <div class="stat-number text-cream mb-1">100%</div>
+                <div class="text-cream">Clientes satisfechos</div>
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Contact Section -->
+    <!-- Features -->
+    <section class="py-4 py-md-5 bg-cream">
+        <div class="text-center mb-4 mb-md-5">
+            <h2 class="display-title text-primary-2 text-uppercase mb-2">Nos caracterizamos por</h2>
+            <p class="text-primary-2-70 lead mx-auto" style="max-width: 720px;">Cada proyecto es único y personalizado para ti.</p>
+          </div>
+      <div class="container-xxl">
+        <div class="row g-3 g-md-4">
+          <div class="col-12 col-md-4">
+            <div class="card-brut h-100 p-4 d-flex flex-column justify-content-center">
+              <div class="feature-icon bg-primary-2"><i class="bi bi-lightning-charge-fill"></i></div>
+              <h4 class="feature-title">Entrega rápida</h4>
+              <p class="mb-0 text-body-secondary">Tu web lista en 2-4 semanas</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card-brut h-100 p-4 d-flex flex-column justify-content-center">
+              <div class="feature-icon bg-primary-2"><i class="bi bi-graph-up-arrow"></i></div>
+              <h4 class="feature-title">SEO incluido</h4>
+              <p class="mb-0 text-body-secondary">Optimización desde el día 1</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card-brut h-100 p-4 d-flex flex-column justify-content-center">
+              <div class="feature-icon bg-primary-2"><i class="bi bi-pencil"></i></div>
+              <h4 class="feature-title">Diseño único</h4>
+              <p class="mb-0 text-body-secondary">Sin plantillas genéricas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Servicios -->
+    <section id="servicios" class="py-5 bg-primary-2">
+      <div class="container-xxl">
+        <div class="mb-4 mb-md-5">
+          <h2 class="display-title text-cream text-uppercase mb-2">Servicios</h2>
+          <p class="text-cream-80 lead">Soluciones digitales completas para hacer crecer tu negocio</p>
+        </div>
+        <div class="row g-3 g-md-4" id="servicios-grid">
+          <!-- Cards are static, expand handled by JS -->
+          <div class="col-12 col-md-6">
+            <div class="service-card card-brut p-4" data-color="#FF6B00">
+              <div class="d-flex justify-content-between align-items-start gap-3">
+                <div class="flex-grow-1">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="badge-round bg-primary-2 text-cream"><i class="bi bi-bag-check-fill"></i></div>
+                    <h3 class="service-title text-cream text-uppercase mb-0">E-Commerce</h3>
+                  </div>
+                  <p class="service-short text-white fw-bold mb-2">Tiendas online que convierten</p>
+                  <p class="service-full text-white-90 d-none">Desarrollamos tiendas online completas con pasarelas de pago, gestión de inventario y diseño optimizado para conversión. Integramos con las mejores plataformas del mercado.</p>
+                </div>
+                <button class="service-toggle btn-round bg-primary-2 text-cream"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="service-card card-brut p-4" data-color="#F9EEDB">
+              <div class="d-flex justify-content-between align-items-start gap-3">
+                <div class="flex-grow-1">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="badge-round bg-primary-2 text-cream"><i class="bi bi-rocket-takeoff-fill"></i></div>
+                    <h3 class="service-title text-primary-2 text-uppercase mb-0">Landing Pages</h3>
+                  </div>
+                  <p class="service-short text-primary-2 fw-bold mb-2">Páginas que generan leads</p>
+                  <p class="service-full text-primary-2-80 d-none">Diseñamos landing pages de alto impacto enfocadas en conversión. Optimizadas para SEO, velocidad de carga y experiencia de usuario excepcional.</p>
+                </div>
+                <button class="service-toggle btn-round bg-primary-2 text-cream"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="service-card card-brut p-4" data-color="#F9EEDB">
+              <div class="d-flex justify-content-between align-items-start gap-3">
+                <div class="flex-grow-1">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="badge-round bg-primary-2 text-white"><i class="bi bi-graph-up-arrow"></i></div>
+                    <h3 class="service-title text-primary-2 text-uppercase mb-0">SEO & GMB</h3>
+                  </div>
+                  <p class="service-short text-primary-2 fw-bold mb-2">Posicionamiento garantizado</p>
+                  <p class="service-full text-primary-2-80 d-none">Estrategias de SEO técnico y local. Optimización de Google My Business para aparecer en los primeros resultados de búsqueda de tu zona.</p>
+                </div>
+                <button class="service-toggle btn-round bg-primary-2 text-white"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="service-card card-brut p-4" data-color="#FF6B00">
+              <div class="d-flex justify-content-between align-items-start gap-3">
+                <div class="flex-grow-1">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="badge-round bg-primary-2 text-cream"><i class="bi bi-gear-fill"></i></div>
+                    <h3 class="service-title text-cream text-uppercase mb-0">Sistemas a Medida</h3>
+                  </div>
+                  <p class="service-short text-white fw-bold mb-2">Soluciones personalizadas</p>
+                  <p class="service-full text-white-90 d-none">Desarrollamos sistemas web personalizados: CRM, dashboards, plataformas de gestión y más. Tecnología moderna adaptada a tus necesidades específicas.</p>
+                </div>
+                <button class="service-toggle btn-round bg-primary-2 text-cream"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portafolio" class="py-5 bg-cream">
+      <div class="container-xxl">
+        <div class="mb-4 mb-md-5">
+          <h2 class="display-title text-primary-2 text-uppercase mb-2">Portafolio</h2>
+          <p class="text-primary-2-70 lead">Proyectos reales que generan resultados reales</p>
+        </div>
+        <div class="grid-bento">
+          <a class="bento item-1 group" href="https://la-atajada.com" target="_blank" aria-label="La Atajada">
+            <img src="public/mockupLaAtajada.png" alt="La Atajada" class="bento-img">
+            <div class="bento-overlay"></div>
+            <span class="bento-tag">Sitio Web</span>
+            <div class="bento-text">
+              <h3 class="bento-title">La Atajada</h3>
+              <p class="bento-desc">Pagina informativa de la empresa La Atajada</p>
+            </div>
+          </a>
+          <a class="bento item-2 group" href="https://provasports.com" target="_blank" aria-label="Provassports">
+            <img src="public/mockupProvas.png" alt="Provassports" class="bento-img">
+            <div class="bento-overlay"></div>
+            <span class="bento-tag">E-Commerce</span>
+            <div class="bento-text">
+              <h3 class="bento-title">Provassports</h3>
+              <p class="bento-desc">E-commerce para una tienda de guantes de futbol.</p>
+            </div>
+          </a>
+          <a class="bento item-3 group" href="https://la-atajada.com/batalla-porteros" target="_blank" aria-label="Batalla de Porteros">
+            <img src="public/mockupBatallaPorteros.png" alt="Batalla de Porteros" class="bento-img">
+            <div class="bento-overlay"></div>
+            <span class="bento-tag">Landing Page</span>
+            <div class="bento-text">
+              <h3 class="bento-title">Batalla de Porteros</h3>
+              <p class="bento-desc">Landing page para anunciar la batalla de porteros de La Atajada</p>
+            </div>
+          </a>
+          <a class="bento item-4 group" href="https://saporigt.shop" target="_blank" aria-label="Sapori">
+            <img src="public/mockupSapori.png" alt="Sapori" class="bento-img">
+            <div class="bento-overlay"></div>
+            <span class="bento-tag">E-Commerce</span>
+            <div class="bento-text">
+              <h3 class="bento-title">Sapori</h3>
+              <p class="bento-desc">E-commerce para una repostera/panadera</p>
+            </div>
+          </a>
+          <a class="bento item-5 group" href="https://la-atajada.site/modo-carrera" target="_blank" aria-label="Modo-Carrera">
+            <img src="public/mockupModo-Carrera.png" alt="Modo-Carrera" class="bento-img">
+            <div class="bento-overlay"></div>
+            <span class="bento-tag">Sistema</span>
+            <div class="bento-text">
+              <h3 class="bento-title">Modo-Carrera</h3>
+              <p class="bento-desc">Sistema de gestión de asistencia y evaluciones de entrenamientos</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-5 bg-primary-2">
+      <div class="container-xxl">
+        <div class="mb-4 mb-md-5">
+          <h2 class="display-title text-cream text-uppercase mb-2">Testimonios</h2>
+          <p class="text-cream-80 lead">Lo que dicen nuestros clientes satisfechos</p>
+        </div>
+        <div class="row g-3 g-md-4">
+          <div class="col-12 col-md-4">
+            <div class="card-brut bg-white p-4 h-100 d-flex flex-column">
+              <div class="stars mb-3">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="flex-grow-1 mb-4">"VenWeb transformó nuestra presencia digital. Las ventas aumentaron un 300% en 3 meses."</p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="avatar-round bg-primary-2 text-white">J</div>
+                <div>
+                  <p class="mb-0 name text-primary-2">Juan José Caniz</p>
+                  <small class="text-body-secondary">Director, La Atajada</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card-brut bg-white p-4 h-100 d-flex flex-column">
+              <div class="stars mb-3">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="flex-grow-1 mb-4">"Profesionales, creativos y puntuales. Exactamente lo que necesitábamos."</p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="avatar-round bg-primary-2 text-white">J</div>
+                <div>
+                  <p class="mb-0 name text-primary-2">Janina Argueta</p>
+                  <small class="text-body-secondary">Repostera/Panadera, Sapori</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card-brut bg-white p-4 h-100 d-flex flex-column">
+              <div class="stars mb-3">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="flex-grow-1 mb-4">"El mejor equipo de desarrollo web en Guatemala. Altamente recomendados."</p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="avatar-round bg-primary-2 text-white">A</div>
+                <div>
+                  <p class="mb-0 name text-primary-2">Allen Vargas</p>
+                  <small class="text-body-secondary">Fundador, Provassports</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5 bg-cream">
+      <div class="container-lg">
+        <div class="text-center mb-4 mb-md-5">
+          <h2 class="display-title text-primary-2 text-uppercase mb-2">Contacto</h2>
+          <p class="text-primary-2-70 lead mx-auto" style="max-width: 720px;">Cuéntanos sobre tu proyecto y te respondemos en menos de 24 horas</p>
+        </div>
+        <div class="card-brut bg-white p-4 p-md-5">
+          <form id="contact-form" class="row g-3" novalidate>
+            <div class="col-12 col-md-6">
+              <input id="contact-name" type="text" class="form-control input-brut" placeholder="Nombre" required />
+            </div>
+            <div class="col-12 col-md-6">
+              <input id="contact-email" type="email" class="form-control input-brut" placeholder="Email" required />
+            </div>
+            <div class="col-12">
+              <input id="contact-company" type="text" class="form-control input-brut" placeholder="Empresa" />
+            </div>
+            <div class="col-12">
+              <textarea id="contact-message" rows="6" class="form-control input-brut" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+            </div>
+            <div class="col-12 d-flex flex-column flex-sm-row gap-2 pt-2">
+              <button id="send-message" type="submit" class="btn btn-accent btn-pill shadow-brut border-brut flex-grow-1">Enviar mensaje</button>
+              <a id="whatsapp-direct" role="button" href="https://wa.me/50247266960" target="_blank" rel="noopener" class="btn btn-wa btn-pill shadow-brut border-brut d-flex align-items-center justify-content-center gap-2">
+                <i class="bi bi-whatsapp"></i>
+                WhatsApp
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 py-md-5 bg-primary-2">
+      <div class="container-xxl">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 mb-4">
+          <div class="text-center text-md-start">
+            <div class="brand-text-lg">VENWEB</div>
+            <p class="text-cream-70 mb-0">Agencia Digital</p>
+          </div>
+          <div class="d-flex gap-2 gap-md-3">
+            <a href="https://www.instagram.com/venweb_" target="_blank" class="icon-round bg-accent text-white" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61573139589721" target="_blank" class="icon-round bg-accent text-white" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://wa.link/ekzwpm" target="_blank" class="icon-round bg-accent text-white" aria-label="LinkedIn"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <hr class="border-cream-20">
+        <p class="text-center text-cream-70 mb-0">© 2025 VenWeb. Todos los derechos reservados.</p>
+      </div>
+    </footer>
   </main>
 
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">VenWeb</strong> <span>Todos los derechos reservados</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://wa.link/c0enx8"><i class="bi bi-whatsapp"></i></a>
-        <a href="https://www.facebook.com/people/Venweb/61573139589721/"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/venweb_/"><i class="bi bi-instagram"></i></a>
-      </div>
-      <div class="credits">
-        Desarrollado por <a href="#">VenWeb</a>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="assets/script.js"></script>
 </body>
-
 </html>

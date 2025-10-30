@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VenWeb | Agencia Digital Retro-Brutalista</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Anton = display / Inter = texto -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="antialiased">
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="brand">
+      <img src="/assets/img/VenWebIcon.png" alt="VenWeb" class="brand__logo">
+      <span class="brand__text">VENWEB</span>
+    </a>
+
+    <button class="nav__toggle" aria-label="Abrir menú" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav__menu" id="navMenu">
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto" class="btn btn--primary">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section id="hero" class="hero">
+  <div class="hero-inner">
+    <div class="hero-card hero-main">
+      <h1>WEBS QUE VENDEN, NO SOLO LUCEN.</h1>
+      <p>
+        Agencia digital especializada en e-commerce, landing pages y posicionamiento SEO con diseño retro-futurista.
+      </p>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-card hero-cta">
+        <h3>Cotiza tu proyecto</h3>
+        <p>Obtén una propuesta personalizada en menos de 24 horas. Sin compromisos.</p>
+        <a href="#contacto" class="btn-white">Empezar ahora →</a>
+      </div>
+      <div class="hero-card hero-stats">
+        <div class="stat">
+          <div class="stat-number">+50</div>
+          <div class="stat-label">Proyectos exitosos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Clientes satisfechos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ===== Features ===== -->
+    <section class="features">
+      <div class="container grid-3">
+        <article class="card center-v">
+          <div class="badge"><span>⚡</span></div>
+          <h4 class="card__title">Entrega rápida</h4>
+          <p class="card__text">Tu web lista en 2-4 semanas</p>
+        </article>
+        <article class="card center-v">
+          <div class="badge badge--purple"><span>🎯</span></div>
+          <h4 class="card__title">SEO incluido</h4>
+          <p class="card__text">Optimización desde el día 1</p>
+        </article>
+        <article class="card center-v">
+          <div class="badge"><span>💎</span></div>
+          <h4 class="card__title">Diseño único</h4>
+          <p class="card__text">Sin plantillas genéricas</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Servicios (expandibles) ===== -->
+    <section id="servicios" class="servicios servicios--purple">
+      <div class="container">
+        <h2 class="section-title inv">Servicios</h2>
+        <p class="section-sub inv">Soluciones digitales completas para hacer crecer tu negocio</p>
+
+        <div class="grid-2 svc-grid">
+          <!-- E-Commerce -->
+          <article class="svc-card" data-color="orange" data-light="false">
+            <div class="svc-head">
+              <div class="svc-icon">🛒</div>
+              <h3 class="svc-title inv">E-Commerce</h3>
+              <button class="svc-plus" aria-label="Expandir">+</button>
+            </div>
+            <p class="svc-short inv">Tiendas online que convierten</p>
+            <p class="svc-full inv">Desarrollamos tiendas online completas con pasarelas de pago, gestión de inventario y diseño optimizado para conversión. Integramos con las mejores plataformas del mercado.</p>
+          </article>
+
+          <!-- Landing Pages -->
+          <article class="svc-card" data-color="purple" data-light="false">
+            <div class="svc-head">
+              <div class="svc-icon svc-icon--light">🚀</div>
+              <h3 class="svc-title inv">Landing Pages</h3>
+              <button class="svc-plus" aria-label="Expandir">+</button>
+            </div>
+            <p class="svc-short inv">Páginas que generan leads</p>
+            <p class="svc-full inv">Diseñamos landing pages de alto impacto enfocadas en conversión. Optimizadas para SEO, velocidad de carga y experiencia de usuario excepcional.</p>
+          </article>
+
+          <!-- SEO & GMB (fondo crema, texto morado) -->
+          <article class="svc-card" data-color="cream" data-light="true">
+            <div class="svc-head">
+              <div class="svc-icon">📈</div>
+              <h3 class="svc-title">SEO &amp; GMB</h3>
+              <button class="svc-plus" aria-label="Expandir">+</button>
+            </div>
+            <p class="svc-short">Posicionamiento garantizado</p>
+            <p class="svc-full">Estrategias de SEO técnico y local. Optimización de Google My Business para aparecer en los primeros resultados de búsqueda de tu zona.</p>
+          </article>
+
+          <!-- Sistemas a Medida -->
+          <article class="svc-card" data-color="orange" data-light="false">
+            <div class="svc-head">
+              <div class="svc-icon svc-icon--light">⚙️</div>
+              <h3 class="svc-title inv">Sistemas a Medida</h3>
+              <button class="svc-plus" aria-label="Expandir">+</button>
+            </div>
+            <p class="svc-short inv">Soluciones personalizadas</p>
+            <p class="svc-full inv">Desarrollamos sistemas web personalizados: CRM, dashboards, plataformas de gestión y más. Tecnología moderna adaptada a tus necesidades específicas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Portafolio (bento grid) ===== -->
+    <section id="portafolio" class="portafolio">
+      <div class="container">
+        <h2 class="section-title">Portafolio</h2>
+        <p class="section-sub">Proyectos reales que generan resultados reales</p>
+
+        <div class="portfolio-bento">
+          <!-- 1 destacado -->
+          <a class="pf pf--xl" href="#" aria-label="La Atajada">
+            <img src="assets/img/artisan-products-ecommerce.jpg" alt="La Atajada">
+            <span class="pf-tag">E-Commerce</span>
+            <div class="pf-info">
+              <h3>La Atajada</h3><p>E-commerce de productos artesanales</p>
+            </div>
+          </a>
+          <!-- 2 alto en mobile / medio desktop -->
+          <a class="pf pf--tall" href="#">
+            <img src="assets/img/italian-restaurant-landing.jpg" alt="Sapori">
+            <span class="pf-tag">Landing</span>
+            <div class="pf-info"><h3>Sapori</h3><p>Landing page para restaurante italiano</p></div>
+          </a>
+          <!-- 3 ancho en desktop -->
+          <a class="pf pf--wide" href="#">
+            <img src="assets/img/recipe-blog-website.jpg" alt="Receta Standard">
+            <span class="pf-tag">Blog</span>
+            <div class="pf-info"><h3>Receta Standard</h3><p>Blog de recetas con sistema de búsqueda</p></div>
+          </a>
+          <!-- 4 normal -->
+          <a class="pf" href="#">
+            <img src="assets/img/online-education-platform.png" alt="Modo-Carrera">
+            <span class="pf-tag">Plataforma</span>
+            <div class="pf-info"><h3>Modo-Carrera</h3><p>Plataforma educativa online</p></div>
+          </a>
+          <!-- 5 normal -->
+          <a class="pf" href="#">
+            <img src="assets/img/wedding-event-management.jpg" alt="BodaLive">
+            <span class="pf-tag">Sistema</span>
+            <div class="pf-info"><h3>BodaLive</h3><p>Sistema de gestión de eventos</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonios ===== -->
+    <section id="testimonios" class="testimonios">
+      <div class="container">
+        <h2 class="section-title inv">Testimonios</h2>
+        <p class="section-sub inv">Lo que dicen nuestros clientes satisfechos</p>
+
+        <div class="grid-3">
+          <blockquote class="quote">
+            <div class="stars">★★★★★</div>
+            <p>“VenWeb transformó nuestra presencia digital. Las ventas aumentaron un 300% en 3 meses.”</p>
+            <footer><strong>María González</strong> · CEO, La Atajada</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <div class="stars">★★★★★</div>
+            <p>“Profesionales, creativos y puntuales. Exactamente lo que necesitábamos.”</p>
+            <footer><strong>Carlos Méndez</strong> · Director, Sapori</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <div class="stars">★★★★★</div>
+            <p>“El mejor equipo de desarrollo web en Guatemala. Altamente recomendados.”</p>
+            <footer><strong>Ana Rodríguez</strong> · Fundadora, BodaLive</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contacto ===== -->
+    <section id="contacto" class="contacto">
+      <div class="container">
+        <div class="text-center mb-32">
+          <h2 class="section-title">Contacto</h2>
+          <p class="section-sub">Cuéntanos sobre tu proyecto y te respondemos en menos de 24 horas</p>
+        </div>
+
+        <div class="contact-box">
+          <form class="form" name="contacto" netlify>
+            <div class="grid-2">
+              <label>Nombre
+                <input type="text" name="nombre" required>
+              </label>
+              <label>Email
+                <input type="email" name="email" required>
+              </label>
+            </div>
+            <label>Empresa
+              <input type="text" name="empresa">
+            </label>
+            <label>Mensaje
+              <textarea name="mensaje" rows="6" required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="btn btn--primary" type="submit">Enviar mensaje</button>
+              <a class="btn btn--whatsapp" href="https://wa.me/50231072961?text=Hola%20VenWeb,%20quiero%20cotizar%20mi%20sitio%20web" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="brand__text brand__text--inv">VENWEB</div>
+        <p class="muted">Agencia Digital Retro-Brutalista</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://instagram.com/venweb" target="_blank" rel="noopener" class="soc soc--insta">Instagram</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="soc">Facebook</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="soc">LinkedIn</a>
+      </div>
+    </div>
+    <div class="container">
+      <p class="muted center">© 2025 VenWeb. Hecho con ❤️ desde Guatemala</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/index.js"></script>
+</body>
+</html>
